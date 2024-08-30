@@ -1,0 +1,112 @@
+/* General section styling */
+.package {
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.pack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.d {
+  flex: 0 1 calc(33.33% - 40px); /* 3 columns in a row with space between */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.d:hover {
+  transform: translateY(-10px);
+}
+
+.items {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.items img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px; /* Set a fixed height to ensure all images are the same size */
+  object-fit: cover; /* Crop images to fit the set dimensions */
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Blue line directly below each image */
+.items img {
+  border-bottom: 4px solid #007bff; /* Blue color */
+  padding-bottom: 10px; /* Adds space between the image and the line */
+}
+
+.items img:hover {
+  transform: scale(1.05);
+}
+
+h4 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .d {
+    flex: 0 1 calc(50% - 40px); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .d {
+    flex: 0 1 calc(100% - 40px); /* 1 column on very small screens */
+  }
+}
+
+/* Search bar styling */
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}

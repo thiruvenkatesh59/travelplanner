@@ -1,0 +1,85 @@
+/* Container styling */
+.reg{
+  padding: 40px;
+  background-color: #00394d; /* Dark blue background color for the entire section */
+  text-align: center;
+
+}
+.register-container {
+  max-width: 400px;
+  margin: 50px auto; /* Add margin for spacing at the top */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Slightly rounded corners for a softer look */
+  background-color: #f5f5f5; /* Light gray background for a modern look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px; /* Increase bottom margin for better spacing */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px; /* Slightly larger spacing for labels */
+  font-weight: bold; /* Make labels bold for better readability */
+  color: #333; /* Darker color for labels */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff; /* White background for inputs */
+  transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.form-group input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold; /* Make the button text bold */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Error message styling */
+.error {
+  color: #d9534f; /* Use Bootstrap's danger color */
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px; /* Slightly larger font for errors */
+  text-align: center; /* Center the error message */
+}
+
+/* Add some global styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+  background-color: #f0f8ff; /* Light blue background for the page */
+  color: #333; /* Default text color */
+}
+
+h2 {
+  text-align: center;
+  color: #007bff; /* Blue heading color */
+  margin-bottom: 20px;
+  font-weight: bold;
+}

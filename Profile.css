@@ -1,0 +1,136 @@
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  color: rgb(10, 10, 10);
+}
+h1{
+color: #000;
+}
+.back{
+  padding: 40px;
+  background-color: #00394d; /* Dark blue background color for the entire section */
+  text-align: center;
+}
+.user-table th, .user-table td {
+  padding: 12px;
+  border: 1px solid #1d1c1c;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+}
+.user-table td {
+  background-color: #f4f4f4;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.n h2{
+  color: #000;
+  font-size: 38px;
+  
+}
+
+
+.main-content {
+  background: #00394d;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(21, 197, 241);
+}
+
+h2 {
+  color:white;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+ul li {
+  margin-bottom: 10px;
+ color: #0a0a0ad7;
+}
+
+
+p{
+  color: #000;
+}
+
+
+img :hover{
+  color: #00394d;
+}
+.card{
+  background-color: #f5f0f0;
+}
+img{
+  
+  padding: 20px;
+  padding-left: 20;
+  padding-right: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(7, 153, 238);
+
+}
+.m h2{
+  color: #f5e9e9;
+  font-size: 30px;
+}
+
+
+/* General styling for all contact containers */
+.contact-container {
+  
+  position: relative;        /* Ensures text can be positioned absolutely */
+  display: inline-block;    /* Ensures the container fits the content */
+  margin: 10px;             /* Adds spacing between containers */
+}
+
+/* Styling for contact link */
+.contact-link {
+  display: block;            /* Makes the link fill the container */
+}
+
+/* Styling for contact image */
+.contact-image {
+  display: block;  
+  background-color: #fafeff;          /* Removes bottom space around images */
+  width: 100px;               /* Sets width of the image */
+  height: 100px;              /* Sets height of the image */
+  object-fit: cover;         /* Ensures image covers the specified dimensions without distortion */
+}
+
+/* Styling for contact text */
+.contact-text {
+  position: absolute;        /* Positions the text relative to the container */
+  top: 100%;                 /* Places the text below the image */
+  left: 50%;                 /* Centers the text horizontally */
+  transform: translateX(-50%); /* Centers the text by adjusting its position */
+  background-color: #00394d; /* Background color for better visibility */
+  padding: 5px;             /* Adds padding around the text */
+  border-radius: 5px;       /* Rounds the corners of the background */
+  font-size: 14px;          /* Sets font size for the text */
+  color:#f4f4f4;              /* Sets color for the text */
+  opacity: 0;               /* Hides the text initially */
+  transition: opacity 0.3s; /* Adds a transition effect for the opacity change */
+}
+
+/* Show contact text on hover */
+.contact-container:hover .contact-text {
+  opacity: 1;               /* Shows the text on hover */
+}
+.card1{
+  background-color: #00394d;
+}
